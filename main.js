@@ -45,3 +45,16 @@ document.querySelector("#cards").innerHTML =
       createGame("hongkong", "11:12", "china") +
       createGame("croatia", "06:30", "fiji")
   )
+let changeColor = document.querySelector("body")
+
+document.querySelector("#yellow").addEventListener("click", function () {
+  changeColor.classList.remove("green")
+  changeColor.classList.remove("blue")
+})
+document.querySelector("#blue").addEventListener("click", function () {
+  changeColor.classList.remove("green")
+  changeColor.classList.add("blue")
+})
+document.querySelector("#green").addEventListener("click", function () {
+  changeColor.classList.add("green")
+})
